@@ -1,10 +1,10 @@
 import React from 'react';
-import './Navbar.scss';
+import './Layout.scss';
 import { NavLink } from 'react-router-dom';
 
-const Navbar: React.FC = () => {
+const Header: React.FC = () => {
 return (
-    <nav>
+    <header>
         <ul>
             <li>
                 <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "") }>Home</NavLink>
@@ -19,8 +19,8 @@ return (
                 <NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "") }>Contact</NavLink>
             </li>
         </ul>
-    </nav>
+    </header>
 );
 };
 
-export default Navbar;
+export default Header;

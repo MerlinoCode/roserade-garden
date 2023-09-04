@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Pokedex from './pages/Pokedex';
 import Error404 from './pages/Error404';
+import Layout from './components/Layout/Layout';
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>;
-      <Navbar />
+    <BrowserRouter>
+    <Layout>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
@@ -20,6 +20,7 @@ const App: React.FC = () => {
         <Route path='/pokedex' element={<Pokedex/>}/>
         <Route path='*' element={<Error404/>}/>
       </Routes>
+    </Layout>
     </BrowserRouter>
   );
 };

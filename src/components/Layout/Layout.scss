@@ -1,0 +1,53 @@
+@use '../../assets/styles/variables';
+
+header {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: 1px solid variables.$text;
+}
+header, .sidebar, .main-content, footer{
+    font-family: variables.$primary-font;
+}
+.navbar-brand { font-size: 1.5rem; }
+ul{ list-style-type: none; }
+header ul{
+    display: flex;
+    gap: 2rem;
+}
+header ul li a{
+    text-decoration: none;
+}
+header ul li a:hover { color: variables.$primary; }
+.active-link{
+    color: variables.$primary;
+    border-bottom: 2px solid variables.$primary;
+}
+.layout {
+    width: auto;
+    height: 768px;
+    display: grid;
+    grid:
+        "header header header" auto
+        "leftSide body body" 1fr
+        "footer footer footer" auto
+        / auto 1fr auto;
+    gap: 8px;
+}
+
+header { grid-area: header; background-color: khaki; }
+.sidebar-links{ padding: 1rem; margin: 1rem auto 0 auto; }
+.sidebar { 
+    grid-area: leftSide; 
+    background-color: aquamarine;
+}
+.main-content {
+    grid-area: body;
+    height: auto; 
+    background-color: slateblue; 
+    padding: 0 1rem 1rem 1rem;
+    background-image: url('https://images.unsplash.com/photo-1544727219-d2ff78f0f148?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80');
+    background-size: cover;
+}
+footer { grid-area: footer; background-color: gray;}

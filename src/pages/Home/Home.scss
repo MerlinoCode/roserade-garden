@@ -1,0 +1,88 @@
+.hexagon{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hexagon svg{
+    width: fit-content;
+    height: fit-content;
+}
+.text-inside-hexagon{
+    padding: 15vh 0;
+    position: absolute;
+    display: flex;
+    width: 583px;
+    height: 360px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.text-inside-hexagon h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 40px;
+    letter-spacing: 1.6px;
+}
+.text-inside-hexagon h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+.hero-title{
+    display: flex;
+    width: 100%;
+    background: rgba(29, 29, 29, 0.82);
+    height: 393px;
+    padding: 0px 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+.hero-title h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.8px;
+}
+.description-container{
+    display: flex;
+    height: 228px;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+.card{
+    display: flex;
+    width: 375px;
+    height: 200px;
+    align-items: center;
+    gap: 15px;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+.card h4 {
+    color: #FFF;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+}
