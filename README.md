@@ -1,27 +1,17 @@
-# React + TypeScript + Vite
+<h1 align="center">
+  Roserade's Garden
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🛠️ Tools & Languajes
 
-Currently, two official plugins are available:
+This project is being constructed using the following ones:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<div align="center">
+  </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer noopener"> <img src="https://skillicons.dev/icons?i=html" alt="html5" width="40" height="40"/> </a>
+  </a> <a href="https://www.w3.org/css/" target="_blank" rel="noreferrer noopener"> <img src="https://skillicons.dev/icons?i=css" alt="html5" width="40" height="40"/> </a>
+  </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer noopener"> <img src="https://skillicons.dev/icons?i=js" alt="html5" width="40" height="40"/> </a>
+   <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer noopener"> <img src="https://skillicons.dev/icons?i=ts" alt="typescript" width="40" height="40"/> </a>
+  </a> <a href="https://react.dev/" target="_blank" rel="noreferrer noopener"> <img src="https://skillicons.dev/icons?i=react" alt="html5" width="40" height="40"/> </a>
+  </a> <a href="https://sass-lang.com/" target="_blank" rel="noreferrer noopener"> <img src="https://skillicons.dev/icons?i=sass" alt="html5" width="40" height="40"/> </a>
+  </a> <a href="https://vitejs.dev/" target="_blank" rel="noreferrer noopener"> <img src="https://skillicons.dev/icons?i=vite" alt="html5" width="40" height="40"/> </a>
+</div>
