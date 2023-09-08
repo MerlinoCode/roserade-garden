@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Hexagon = () => {
 return (
     <svg width="726" height="718" viewBox="0 0 726 718" fill="none" xmlns="http://www.w3.org/2000/svg">

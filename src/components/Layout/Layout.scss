@@ -46,8 +46,5 @@ header { grid-area: header; background-color: khaki; }
     grid-area: body;
     height: auto; 
     background-color: slateblue; 
-    padding: 0 1rem 1rem 1rem;
-    background-image: url('https://images.unsplash.com/photo-1544727219-d2ff78f0f148?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80');
-    background-size: cover;
 }
 footer { grid-area: footer; background-color: gray;}
