@@ -8,11 +8,10 @@ const PokemonList = () => {
     const [pokemonData, setPokemonData] = useState<IPokemon[]>([]);
 
 useEffect(() => {
-    const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=20';
+    const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=30';
 
     axios.get(apiUrl).then(async (response) => {
         const { results } = response.data;
-        console.log(results)
         // Fetch additional details for each Pokémon
         const pokemonDetailsPromises = results.map(async (pokemon: { url: string; }) => {
             const detailsResponse = await axios.get(pokemon.url);

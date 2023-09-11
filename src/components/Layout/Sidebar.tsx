@@ -1,6 +1,9 @@
+import { useLocation } from "react-router-dom";
+
 const Sidebar = () => {
-return (
-    <aside className="sidebar">
+    const { pathname } = useLocation();
+    if (pathname === "/") {
+        return <aside className="sidebar">
         <nav className="sidebar-nav">
             <ul className="sidebar-links">
                 <li>
@@ -14,8 +17,11 @@ return (
                 </li>
             </ul>
         </nav>
-    </aside>
-);
+    </aside>;
+      }
+    return (
+        <></>
+    );
 };
 
 export default Sidebar;

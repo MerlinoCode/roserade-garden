@@ -1,10 +1,14 @@
 @use '../assets/styles/variables';
 
+.main-content h1{
+    text-align: center;
+}
 .pokemon-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    gap: 8px;
+    gap: 1rem;
+    padding: 1rem;
 }
 .pokemon-card{
     display: grid;
@@ -20,7 +24,7 @@
     transform: scale(1.05);
 }
 .pokemon-card-sprite{
-    width: 135px;
+    width: 116px;
     height: 135px;
     display: flex;
     grid-row-start: 1;
