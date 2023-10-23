@@ -7,16 +7,16 @@ return (
     <header>
         <ul>
             <li>
-                <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "") }>Home</NavLink>
+                <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "") }>Inicio</NavLink>
             </li>
             <li>
-                <NavLink to="/pokedex" className={({ isActive }) => (isActive ? "active-link" : "") }>Pokedex</NavLink>
+                <NavLink to="/pokedex" className={({ isActive }) => (isActive ? "active-link" : "") }>El Jardín</NavLink>
             </li>
             <li>
-                <NavLink to="/about" className={({ isActive }) => (isActive ? "active-link" : "") }>About</NavLink>
+                <NavLink to="/about" className={({ isActive }) => (isActive ? "active-link" : "") }>Pokedex</NavLink>
             </li>
             <li>
-                <NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "") }>Contact</NavLink>
+                <NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "") }>Contacto</NavLink>
             </li>
         </ul>
     </header>

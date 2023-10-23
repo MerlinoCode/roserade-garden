@@ -12,6 +12,12 @@ header, .sidebar, .main-content, footer{
 }
 .navbar-brand { font-size: 1.5rem; }
 ul{ list-style-type: none; }
+header{
+    border: 2px solid #D4B926;
+    background: rgba(29, 29, 29, 0.42);
+    backdrop-filter: blur(5.5px);
+    grid-area: header;
+}
 header ul{
     display: flex;
     gap: 2rem;
@@ -35,8 +41,6 @@ header ul li a:hover { color: variables.$primary; }
         / auto 1fr auto;
     gap: 8px;
 }
-
-header { grid-area: header; background-color: khaki; }
 .sidebar-links{ padding: 1rem; margin: 1rem auto 0 auto; }
 .sidebar { 
     grid-area: leftSide; 
