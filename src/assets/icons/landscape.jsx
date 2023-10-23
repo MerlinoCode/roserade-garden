@@ -1,0 +1,17 @@
+import React from 'react'
+
+const Landscape = (props) => {
+  return (
+    <svg width={props.w} height={props.h} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+      <rect id="Landscape" width={props.w} height={props.h} fill="url(#pattern1)"/>
+      <defs>
+        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlinkHref="#image0_50_56" transform="scale(0.01)"/>
+        </pattern>
+        <image id="image0_50_56" width={props.w} height={props.h} xlinkHref="data:image/png;base64,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"/>
+      </defs>
+    </svg>
+  )
+}
+
+export default Landscape

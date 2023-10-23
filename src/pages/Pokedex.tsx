@@ -35,19 +35,11 @@ return (
                         <img className='pokemon-card-sprite' src={pokemon.sprites.other.dream_world.front_default}/>
                         <div className='pokemon-card-body'>
                             <h1>{pokemon.name}</h1>
-                            {/* <strong>Abilities:</strong>
-                            <ul>
-                                {pokemon.abilities.map((ability, abilityIndex) => (
-                                    <li key={abilityIndex}>{ability.ability.name}</li>
-                                ))}
-                            </ul> */}
                             <div className='pokemon-card-types'>
                                 {pokemon.types.map((type, typeIndex) => (
                                     <div className={`button ${type.type.name}`} key={typeIndex}>{type.type.name}</div>
                                 ))}
                             </div>
-                            {/* <strong>Height:</strong> {pokemon.height}
-                            <strong>Weight:</strong> {pokemon.weight} */}
                         </div>
                 </ul>
                 ))}
