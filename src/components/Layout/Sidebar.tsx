@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 
 const Sidebar = () => {
     const { pathname } = useLocation();
-    if (pathname === "/") {
+    if (pathname === "/garden") {
         return <aside className="sidebar">
         <nav className="sidebar-nav">
             <ul className="sidebar-links">

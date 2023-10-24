@@ -24,6 +24,7 @@ header ul{
 }
 header ul li a{
     text-decoration: none;
+    color: variables.$text;
 }
 header ul li a:hover { color: variables.$primary; }
 .active-link{
@@ -49,6 +50,5 @@ header ul li a:hover { color: variables.$primary; }
 .main-content {
     grid-area: body;
     height: auto; 
-    background-color: slateblue; 
 }
 footer { grid-area: footer; background-color: gray;}
