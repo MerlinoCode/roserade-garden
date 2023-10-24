@@ -1,35 +1,33 @@
 @use '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
 
 header {
-    color: #fff;
     display: flex;
     justify-content: center;
     padding: 1rem;
-    border-bottom: 1px solid variables.$text;
+    border: 2px solid variables.$primary;
+    background: rgba(29, 29, 29, 0.42);
+    backdrop-filter: blur(5.5px);
+    grid-area: header;
 }
 header, .sidebar, .main-content, footer{
     font-family: variables.$primary-font;
 }
 .navbar-brand { font-size: 1.5rem; }
 ul{ list-style-type: none; }
-header{
-    border: 2px solid #D4B926;
-    background: rgba(29, 29, 29, 0.42);
-    backdrop-filter: blur(5.5px);
-    grid-area: header;
-}
 header ul{
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 header ul li a{
     text-decoration: none;
-    color: variables.$text;
+    color: variables.$secondary;
+    @include font(22px, 1.05px);
 }
-header ul li a:hover { color: variables.$primary; }
+header ul li a:hover { color: variables.$text; }
 .active-link{
-    color: variables.$primary;
-    border-bottom: 2px solid variables.$primary;
+    color: variables.$text;
+    border-bottom: 2px solid variables.$text;
 }
 #layout {
     width: auto;
