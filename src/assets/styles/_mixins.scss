@@ -1,7 +1,8 @@
-@mixin font($f-size, $ls-size){
+@mixin font($f-size, $ls-size, $f-weight, $f-family){
     font-size: $f-size;
     letter-spacing: $ls-size;
+    font-family: $f-family;
     font-style: normal;
-    font-weight: 400;
+    font-weight: $f-weight;
     line-height: normal;
 }   
