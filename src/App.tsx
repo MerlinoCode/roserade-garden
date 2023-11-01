@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Pokedex from './pages/Pokedex';
 import Error404 from './pages/Error404';
 import Layout from './components/Layout/Layout';
+import Garden from './pages/Garden';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,8 @@ const App: React.FC = () => {
         <Route path='/acerca' element={<Navigate to="/about"/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/contacto' element={<Navigate to="/contact"/>}/>
+        <Route path='/garden' element={<Garden/>}/>
+        <Route path='/jardin' element={<Navigate to="/garden"/>}/>
         <Route path='/pokedex' element={<Pokedex/>}/>
         <Route path='*' element={<Error404/>}/>
       </Routes>
