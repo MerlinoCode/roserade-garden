@@ -7,7 +7,22 @@ import { default as tiktok } from '../../assets/icons/Social Media/TikTok.svg';
 import { default as twitterx } from '../../assets/icons/Social Media/TwitterX.svg';
 import Title from '../Title/Title';
 import InputForm from '../InputForm/InputForm';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
+const scrollToTop = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+    document.documentElement.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth", 
+    });
+    }, [pathname]);
+
+    return null;
+}
 
 const Footer = () => {
 return (
@@ -46,16 +61,16 @@ return (
                 <div className='page-links'>
                         <ul>
                             <li>
-                                <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "") }>Inicio</NavLink>
+                                <NavLink to="/" onClick={scrollToTop} className={({ isActive }) => (isActive ? "active-link" : "") }>Inicio</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/garden" className={({ isActive }) => (isActive ? "active-link" : "") }>El Jardín</NavLink>
+                                <NavLink to="/garden" onClick={scrollToTop} className={({ isActive }) => (isActive ? "active-link" : "") }>El Jardín</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/pokedex" className={({ isActive }) => (isActive ? "active-link" : "") }>Pokedex</NavLink>
+                                <NavLink to="/pokedex" onClick={scrollToTop} className={({ isActive }) => (isActive ? "active-link" : "") }>Pokedex</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "") }>Contacto</NavLink>
+                                <NavLink to="/contact" onClick={scrollToTop} className={({ isActive }) => (isActive ? "active-link" : "") }>Contacto</NavLink>
                             </li>
                         </ul>
                 </div>
