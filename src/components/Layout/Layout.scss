@@ -10,11 +10,6 @@ header {
     backdrop-filter: blur(5.5px);
     grid-area: header;
 }
-.sidebar, .main-content, footer{
-    font-family: variables.$primary-font;
-}
-.navbar-brand { font-size: 1.5rem; }
-ul{ list-style-type: none; }
 header ul{
     display: flex;
     gap: 3rem;
@@ -22,9 +17,14 @@ header ul{
 header ul li a{
     text-decoration: none;
     color: variables.$secondary;
-    @include font(22px, 1.05px, 400, variables.$tertiary-font);
+    @include font(22px, 1.05px, 400, variables.$primary-font);
 }
 header ul li a:hover { color: variables.$text; }
+.sidebar, .main-content, footer{
+    font-family: variables.$primary-font;
+}
+.navbar-brand { font-size: 1.5rem; }
+ul{ list-style-type: none; }
 .active-link{
     color: variables.$text;
     border-bottom: 2px solid variables.$text;
@@ -90,5 +90,28 @@ footer {
     margin: 0 0.5rem;
 }
 .div2 { grid-area: 1 / 2 / 2 / 3; }
+.div2 form{ text-align: center }
+.div2 form .button-form{
+    @include font(16px, 0.5px, 400, variables.$quaternary-font);
+    background-color: variables.$accent;
+    border-radius: 10px;
+    color: variables.$background;
+    padding: 0.5rem 3rem;
+}
 .div3 { grid-area: 1 / 3 / 2 / 4; }
+.div3 .page-links ul li{
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    margin: 0 30%;
+}
+.div3 .page-links ul li a{
+    border-bottom: none;
+    text-decoration: none;
+}
 .div4 { grid-area: 1 / 4 / 2 / 5; }
+.div4 .informative-text{
+    @include font(1rem, 1.2px, 400, variables.$primary-font);
+    text-align: center;
+}

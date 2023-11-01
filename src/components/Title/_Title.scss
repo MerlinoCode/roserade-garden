@@ -1,10 +1,14 @@
 @use '../../assets/styles/variables';
 @import '../../assets/styles/mixins';
 
+.title{
+    display: flex;
+    justify-content: center;
+}
+
 .title p{
     @include font(22px, 1.2px, 400, variables.$primary-font);
     border-bottom: 3px ridge variables.$accent;
-    border-radius: 40%;
-    padding-bottom: 0.5rem;
-    text-align: center;
+    padding-bottom: 0.2rem;
+    width: fit-content;
 }
