@@ -12,7 +12,9 @@ const AreaDescription : React.FC<props> = ({title, desc, image}) => {
     return(
         <div className="description">
             <h2 className="area-title">{title}</h2>
-            <p className="">{desc}</p>
+            <p className="text-desc">{desc}</p>
+            <div className="background-divisor"></div>
+            <img className="photo" src={image}/>
         </div>
     )
 }

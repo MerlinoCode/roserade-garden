@@ -1,6 +1,34 @@
+@use '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
 .description{
     background: rgba(134, 192, 140, 0.19);
+    color: variables.$text;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.1rem 1fr;
     grid-template-rows: 1fr;
+    margin: 1rem 0;
+    padding: 0 1rem;
 }
+.area-title{ 
+    @include font(26px, 2px, 600, variables.$primary-font);
+    color: variables.$text;
+    border-bottom: 1px solid variables.$accent;
+    grid-area: 1 / 1 / 2 / 4;
+    margin: 1rem auto;
+    text-align: center;
+    text-align: center;
+    width: fit-content;
+}
+.text-desc{ 
+    @include font(16px, 1px, 400, variables.$secondary-font);
+    grid-area: 2 / 1 / 3 / 2;
+    padding: 1rem;
+}
+.background-divisor{ 
+    //background: linear-gradient(0deg, variables.$secondary 0%, variables.$primary 50%, variables.$tertiary 100%);
+    background-color: variables.$accent;
+    border-radius: 4rem;
+    margin: 1rem 0;
+}
+.photo{ grid-area: 2 / 3 / 3 / 4; }
