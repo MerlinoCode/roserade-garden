@@ -82,6 +82,9 @@ return (
                 <Title text="TELÉFONO"/>
                 <p className='informative-text'>+54 000 9999 9999</p>
             </div>
+            <div className='credits'>
+                <p>&copy; {new Date().getFullYear()} - Jonathan Leonel Merlino</p>
+            </div>
     </footer>
 );
 };
