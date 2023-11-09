@@ -29,8 +29,6 @@ return (
     <footer>
             {/* <p>&copy; {new Date().getFullYear()} Jonathan Leonel Merlino</p> */}
             <div className="div1">
-                <p>Planifique su visita hoy mismo y experimente la tranquilidad y la belleza que sólo un jardín como el nuestro puede ofrecer. Ven a explorar el mundo de la flora y deje que la magia de la naturaleza le inspire.</p>
-                <img className='roserade-sprite' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/407.png"/>
                 <h4>¡Seguinos en nuestras redes sociales!</h4>
                 <div className="social-media">
                     <div>

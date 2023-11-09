@@ -60,10 +60,6 @@ footer {
     margin: 0 0.5em;
 }
 .div1 { 
-    grid-area: 1 / 1 / 2 / 2; 
-    display: grid;
-    grid-template-columns: 2fr 0.5fr;
-    grid-template-rows: 0.7fr 0.1fr 1fr;
     margin: 0.5rem 1rem;
     width: 320px;
 }

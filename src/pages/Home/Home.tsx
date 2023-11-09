@@ -1,20 +1,14 @@
 import React from "react";
 import './Home.scss'
-import { default as roserade } from '../../assets/images/Roserade.svg';
 import InformationCard from "../../components/InformationCard/InformationCard";
 import FeatureCallout from "../../components/FeatureCallout/FeatureCallout";
+import Presentation from "../../components/Presentation/Presentation";
 
 const Home : React.FC<{}> = () => {
     
     return(
         <div className="home">
-            <div className="rectangle">
-                <h1>El Jardín de Roserade</h1>
-                <h3>Ven a visitiar el primer y único atractivo turístico Hecho por fans y para fans de pokemon!</h3>
-            </div>
-            <div className="roserade-image">
-                <img src={roserade}/>
-            </div>
+            <Presentation title="El Jardín de Roserade" desc="Ven a visitiar el primer y único atractivo turístico Hecho por fans y para fans de pokemon!"/>
             <div className="information">
                 <h1>Bienvenido!</h1>
                 <InformationCard logo="airport" desc="Ven a un mundo de maravillas naturales y serenidad en el Jardín de Roserade, un renombrado atractivo turístico que cautiva los corazones de millones de personas."/>
@@ -24,7 +18,7 @@ const Home : React.FC<{}> = () => {
                     desc="Descubra la magia de la naturaleza mientras se adentra en un reino de encanto y tranquilidad. 
                     Ideal para toda disfrutar con toda la familia. 
                     El jardín espera su llegada!"/>
-            </div>
+            P</div>
             <FeatureCallout 
                 imgsrc="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/407.png"
                 title="¡Ven a visitarnos!"

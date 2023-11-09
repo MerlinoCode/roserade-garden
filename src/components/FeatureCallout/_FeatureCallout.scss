@@ -1,2 +1,24 @@
 @use '../../assets/styles/variables';
 @import '../../assets/styles/mixins';
+
+.feature-callout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem 0;
+}
+.image-feature{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.feature-title{
+    @include font(45px, 2.05px, 600, variables.$primary-font, variables.$text);
+    text-align: center;
+}
+.feature-desc{
+    text-align: center;
+    @include font(16px, 2.05px, 400, variables.$tertiary-font, variables.$text);
+    margin: 0 3rem;
+    opacity: 0.8;
+}
