@@ -6,7 +6,6 @@ import { default as instagram } from '../../assets/icons/Social Media/Instagram.
 import { default as tiktok } from '../../assets/icons/Social Media/TikTok.svg';
 import { default as twitterx } from '../../assets/icons/Social Media/TwitterX.svg';
 import Title from '../Title/Title';
-import InputForm from '../InputForm/InputForm';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
@@ -29,7 +28,7 @@ return (
     <footer>
             {/* <p>&copy; {new Date().getFullYear()} Jonathan Leonel Merlino</p> */}
             <div className="div1">
-                <h4>¡Seguinos en nuestras redes sociales!</h4>
+                <Title text="Nuestras redes sociales"/>
                 <div className="social-media">
                     <div>
                     <a href='https://www.pinterest.com/' target="_blank" rel="noopener noreferrer"><img src={pinterest}/></a>
@@ -45,16 +44,6 @@ return (
                 </div>
             </div>
             <div className='div2'>
-                <Title text='RESERVÁ TU TICKET'/>
-                <form>
-                    <InputForm id="name" type="text" text='Nombre y Apellido'/>
-                    <InputForm id="mail" type="mail" text='Dirección de Email'/>
-                    <InputForm id="phone" type="text" text='Número de Celular'/>
-                    <InputForm id="ticket" type="number" text='Número de Tickets'/>
-                    <input className="button-form" type="submit" value="Enviar"/>
-                </form>
-            </div>
-            <div className='div3'>
                 <Title text="LINKS"/>
                 <div className='page-links'>
                         <ul>
@@ -73,7 +62,7 @@ return (
                         </ul>
                 </div>
             </div>
-            <div className='div4'>
+            <div className='div3'>
                 <Title text="DIRECCIÓN"/>
                 <p className='informative-text'>Av. Lorem Ipsum 4200</p>
                 <br/>

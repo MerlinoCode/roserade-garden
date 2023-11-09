@@ -3,6 +3,7 @@ import './Home.scss'
 import InformationCard from "../../components/InformationCard/InformationCard";
 import FeatureCallout from "../../components/FeatureCallout/FeatureCallout";
 import Presentation from "../../components/Presentation/Presentation";
+import Formulary from "../../components/Formulary/Formulary";
 
 const Home : React.FC<{}> = () => {
     
@@ -20,10 +21,10 @@ const Home : React.FC<{}> = () => {
                     El jardín espera su llegada!"/>
             P</div>
             <FeatureCallout 
-                imgsrc="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/407.png"
                 title="¡Ven a visitarnos!"
                 desc="Planifique su visita hoy mismo y experimente la tranquilidad y la belleza que sólo un jardín como el nuestro puede ofrecer. Ven a explorar el mundo de la flora y deje que la magia de la naturaleza le inspire."
             />
+            <Formulary title='RESERVÁ TU TICKET'/>
         </div>
     )
 }

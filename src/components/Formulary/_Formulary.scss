@@ -1,0 +1,21 @@
+@use '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.form-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+}
+.form-content .title{
+    grid-area: 1 / 2 / 2 / 3;
+}
+.form-content form{ 
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center;
+}
+.form-content .button-form{
+    @include font(16px, 0.5px, 400, variables.$quaternary-font, variables.$background);
+    background-color: variables.$accent;
+    border-radius: 10px;
+    padding: 0.5rem 3rem;
+}

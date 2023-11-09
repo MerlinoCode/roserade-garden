@@ -28,7 +28,7 @@
 .rectangle h3{
     @include font(26px, 1.05px, 400, variables.$secondary-font, variables.$accent);
     margin: 0 20vh;
-    text-align: left;
+    text-align: center;
 }
 .roserade-image{
     text-align: center;
