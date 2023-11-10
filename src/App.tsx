@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import Pokedex from './pages/Pokedex';
 import Error404 from './pages/Error404';
 import Layout from './components/Layout/Layout';
-import Garden from './pages/Garden';
+import Garden from './pages/Garden/Garden';
 
 const App: React.FC = () => {
   return (

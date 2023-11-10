@@ -14,7 +14,9 @@ const AreaDescription : React.FC<props> = ({title, desc, image}) => {
             <h2 className="area-title">{title}</h2>
             <p className="text-desc">{desc}</p>
             <div className="background-divisor"></div>
-            <img className="photo" src={image}/>
+            <div className="image-wrapper">
+                <img className="photo" src={image}/>
+            </div>
         </div>
     )
 }
