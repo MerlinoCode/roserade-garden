@@ -31,15 +31,15 @@ return (
                 <Title text="NUESTRAS REDES SOCIALES"/>
                 <div className="social-media">
                     <div>
-                    <a href='https://www.pinterest.com/' target="_blank" rel="noopener noreferrer"><img src={pinterest}/></a>
-                    <a href='https://www.reddit.com/' target="_blank" rel="noopener noreferrer"><img src={reddit}/></a>
-                    <a href='https://www.youtube.com/' target="_blank" rel="noopener noreferrer"><img src={youtube}/></a>
+                        <a href='https://www.pinterest.com/' target="_blank" rel="noopener noreferrer"><img src={pinterest}/></a>
+                        <a href='https://www.reddit.com/' target="_blank" rel="noopener noreferrer"><img src={reddit}/></a>
+                        <a href='https://www.youtube.com/' target="_blank" rel="noopener noreferrer"><img src={youtube}/></a>
                     </div>
                     <div>
-                    <a href='https://www.facebook.com/' target="_blank" rel="noopener noreferrer"><img src={facebook}/></a>
-                    <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer"><img src={instagram}/></a>
-                    <a href='https://www.tiktok.com/' target="_blank" rel="noopener noreferrer"><img src={tiktok}/></a>
-                    <a href='https://twitter.com/' target="_blank" rel="noopener noreferrer"><img src={twitterx}/></a>
+                        <a href='https://www.facebook.com/' target="_blank" rel="noopener noreferrer"><img src={facebook}/></a>
+                        <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer"><img src={instagram}/></a>
+                        <a href='https://www.tiktok.com/' target="_blank" rel="noopener noreferrer"><img src={tiktok}/></a>
+                        <a href='https://twitter.com/' target="_blank" rel="noopener noreferrer"><img src={twitterx}/></a>
                     </div>
                 </div>
             </div>

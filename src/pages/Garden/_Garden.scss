@@ -1,0 +1,12 @@
+.garden{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr; 
+}
+.sidebar{
+    grid-area: 1 / 1 / 2 / 2;
+    overflow-y: auto;
+}
+.garden-descriptions{
+    grid-area: 1 / 2 / 2 / 3;
+}

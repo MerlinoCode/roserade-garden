@@ -19,9 +19,6 @@ header ul li a{
     @include font(22px, 1.05px, 400, variables.$primary-font, variables.$secondary);
 }
 header ul li a:hover { color: variables.$text; }
-.sidebar, .main-content, footer{
-    font-family: variables.$primary-font;
-}
 .navbar-brand { font-size: 1.5rem; }
 ul{ list-style-type: none; }
 .active-link{
@@ -38,11 +35,6 @@ ul{ list-style-type: none; }
         "footer footer footer" auto
         / auto 1fr auto;
     gap: 8px;
-}
-.sidebar-links{ padding: 1rem; margin: 1rem auto 0 auto; }
-.sidebar { 
-    grid-area: leftSide; 
-    background-color: aquamarine;
 }
 .main-content {
     grid-area: body;
@@ -67,6 +59,7 @@ footer {
     margin: 0 0.5rem;
 }
 .div2 .page-links ul li{
+    @include font(18px, 1px, 400, variables.$primary-font, variables.$secondary);
     color: rgba(255, 255, 255, 0.6);
     display: flex;
     flex-direction: column;
