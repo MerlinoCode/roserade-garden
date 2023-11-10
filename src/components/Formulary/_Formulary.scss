@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 0.1fr 1fr;
+    margin-bottom: 3rem;
 }
 .form-content .title{
     grid-area: 1 / 2 / 2 / 3;

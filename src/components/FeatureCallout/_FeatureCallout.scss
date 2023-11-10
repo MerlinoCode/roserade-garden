@@ -18,6 +18,7 @@
 }
 .feature-title{
     @include font(45px, 2.05px, 600, variables.$primary-font, variables.$text);
+    margin-bottom: 1rem;
 }
 .feature-desc{
     @include font(16px, 2.05px, 400, variables.$tertiary-font, variables.$text);

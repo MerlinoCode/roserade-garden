@@ -19,7 +19,7 @@ const Home : React.FC<{}> = () => {
                     desc="Descubra la magia de la naturaleza mientras se adentra en un reino de encanto y tranquilidad. 
                     Ideal para toda disfrutar con toda la familia. 
                     El jardín espera su llegada!"/>
-            P</div>
+            </div>
             <FeatureCallout 
                 title="¡Ven a visitarnos!"
                 desc="Planifique su visita hoy mismo y experimente la tranquilidad y la belleza que sólo un jardín como el nuestro puede ofrecer. Ven a explorar el mundo de la flora y deje que la magia de la naturaleza le inspire."
