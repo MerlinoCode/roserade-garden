@@ -1,6 +1,5 @@
 import React from "react";
 import './_Presentation.scss'
-import { default as roserade } from '../../assets/images/Roserade.svg';
 
 interface props{
     title: string;
@@ -17,7 +16,7 @@ const Presentation : React.FC<props> = ({title, desc}) => {
                     <h3>{desc}</h3>
                 </div>
                 <div className="roserade-image">
-                    <img src={roserade}/>
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/407.png'/>
                 </div>
             </div>
         </div>

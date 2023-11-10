@@ -29,7 +29,8 @@ body::before {
     grid-row-gap: 0px;
 }
 .information{
-    background: #172A1F;//rgba(0, 0, 0, 0.64);
+    background: rgba(14, 32, 21, 0.675);
+    backdrop-filter: blur(1rem);
     box-shadow: 0 0px 16px 16px #000000c9 inset;
     column-gap: 3rem;
     grid-area: 4 / 1 / 5 / 4;

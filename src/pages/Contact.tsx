@@ -1,9 +1,12 @@
 import React from "react";
+import Title from "../components/Title/Title";
 
 const Contact : React.FC<{}> = () => {
     
     return(
-        <h1>Contact</h1>
+        <div className="contact">
+            <Title text="Contacto"/>
+        </div>
     )
 }
 

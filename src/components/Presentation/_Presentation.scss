@@ -6,28 +6,29 @@
 }
 .presentation-content{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
 }
 
 .rectangle {
-    background: rgba(134, 192, 140, 0.19);
+    background: variables.$background;
+    backdrop-filter: blur(0.5rem);
     display: flex;
     flex-direction: column;
     margin: auto;
     padding-bottom: 3rem;
-    width: 70%;
+    width: 80%;
 }
 .rectangle h1{
-    @include font(45px, 2.05px, 400, variables.$primary-font, variables.$text);
+    @include font(44px, 2.05px, 400, variables.$primary-font, variables.$text);
     text-align: center;
 
 }
 .rectangle h3{
     @include font(26px, 1.05px, 400, variables.$secondary-font, variables.$accent);
-    margin: 0 20vh;
+    margin: 0 15vh;
     text-align: center;
 }
 .roserade-image{

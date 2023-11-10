@@ -1,8 +1,8 @@
-// PokemonList.tsx
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { IPokemon } from '../interfaces/interfaces';
+import { IPokemon } from '../../interfaces/interfaces';
 import './Pokedex.scss'
+import Title from '../../components/Title/Title';
 
 const PokemonList = () => {
     const [pokemonData, setPokemonData] = useState<IPokemon[]>([]);
@@ -28,7 +28,7 @@ useEffect(() => {
 
 return (
     <>
-        <h1>Pokémon List</h1>
+        <Title text='Listado de Pokemons'/>
         <div className='pokemon-grid'>
             {pokemonData.map((pokemon) => (
                 <ul className='pokemon-card' key={pokemon.id}>
