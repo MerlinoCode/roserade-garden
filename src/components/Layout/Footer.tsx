@@ -28,7 +28,7 @@ return (
     <footer>
             {/* <p>&copy; {new Date().getFullYear()} Jonathan Leonel Merlino</p> */}
             <div className="div1">
-                <Title text="Nuestras redes sociales"/>
+                <Title text="NUESTRAS REDES SOCIALES"/>
                 <div className="social-media">
                     <div>
                     <a href='https://www.pinterest.com/' target="_blank" rel="noopener noreferrer"><img src={pinterest}/></a>

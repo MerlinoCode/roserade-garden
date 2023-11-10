@@ -4,7 +4,7 @@ import AreaDescription from "../../components/AreaDescription/AreaDescription";
 const Garden : React.FC<{}> = () => {
     
     return(
-        <>
+        <div className="garden">
             <AreaDescription image='https://images.unsplash.com/photo-1550948390-6eb7fa773072' title='El Jardín de Roserade' desc='Explora la esencia misma de la elegancia en nuestro exquisito "Jardín de Roserade". Aquí, las rosas florecen en una sinfonía de colores y fragancias, creando un ambiente de serenidad y belleza. Pasea por caminos serpenteantes rodeados de hermosas flores y descubre la magia que solo Roserade puede inspirar.'/>
             <AreaDescription image='https://images.unsplash.com/photo-1585320806297-9794b3e4eeae' title='Laberinto de las Rosas' desc='Adéntrate en el enigmático "Laberinto de las Rosas". Este laberinto floral es una maravilla de la naturaleza, donde la diversión y la aventura se entrelazan. Pierde la noción del tiempo mientras buscas el camino correcto y descubre sorpresas escondidas en cada esquina. ¡Un desafío que encantará a visitantes de todas las edades!'/>
             <AreaDescription image='https://images.unsplash.com/photo-1612454376902-577cd469d008' title='Exhibición Pokémon' desc='En nuestra "Exhibición Pokémon," sumérgete en el emocionante mundo de Roserade y otros Pokémon de la región. Descubre la historia, el arte y la cultura que rodean a estos seres mágicos. Desde raras cartas Pokémon hasta impresionantes ilustraciones, esta exhibición es una delicia para los fanáticos de todas las edades.'/>
@@ -14,7 +14,7 @@ const Garden : React.FC<{}> = () => {
             <AreaDescription image='https://images.unsplash.com/photo-1474899351970-ee05f7dd1334' title='Área de Picnic' desc='Organiza un picnic inolvidable en nuestra "Área de Picnic". Rodeado de la belleza de la naturaleza y con amplias zonas verdes, este es el lugar perfecto para disfrutar de una comida al aire libre con amigos y familiares. ¡Convierte tu visita en una experiencia gastronómica en medio de un paraíso floral!'/>
             <AreaDescription image='https://images.unsplash.com/photo-1532969058732-3615a226bbc2' title='Mirador Escénico' desc='Nuestro "Mirador Escénico" ofrece vistas panorámicas de todo el jardín. Sube a lo más alto y admira la belleza que te rodea. Es el lugar perfecto para tomar fotografías impresionantes y apreciar la magnificencia del jardín desde lo más alto.'/>
             <AreaDescription image='https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98' title='Área de Juegos para Niños' desc='Los más pequeños encontrarán diversión ilimitada en nuestra "Área de Juegos para Niños". Toboganes, columpios y juegos interactivos harán que los niños se diviertan a lo grande mientras exploran el mundo de Roserade.'/>
-        </>
+        </div>
     )
 }
 
