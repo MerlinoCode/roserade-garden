@@ -1,6 +1,7 @@
     import React from "react";
 import './_FeatureCallout.scss'
 import {default as image} from '../../assets/icons/Pokemon_GO.svg'
+import Title from "../Title/Title";
 
 interface props{
     title: string;
@@ -14,7 +15,7 @@ const FeatureCallout : React.FC<props> = ({title, desc}) => {
                 <img src={image}/>
             </div>
             <div className="feature-text">
-                <h2 className="feature-title">{title}</h2>
+                <Title text={title} type='large' border={false}/>
                 <p className="feature-desc">{desc}</p>
             </div>
         </div>

@@ -11,7 +11,6 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
 }
-
 .rectangle {
     background: variables.$background;
     backdrop-filter: blur(0.5rem);
@@ -19,18 +18,12 @@
     flex-direction: column;
     margin: auto;
     padding-bottom: 3rem;
-    width: 80%;
-}
-.rectangle h1{
-    @include font(44px, 2.05px, 400, variables.$primary-font, variables.$text);
     text-align: center;
-
+    width: 80%;
 }
 .rectangle h3{
     @include font(26px, 1.05px, 400, variables.$secondary-font, variables.$accent);
     margin: 0 15vh;
     text-align: center;
 }
-.roserade-image{
-    text-align: center;
-}
+.roserade-image{ text-align: center; }

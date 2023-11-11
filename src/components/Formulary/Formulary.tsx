@@ -10,7 +10,7 @@ interface props{
 const Formulary : React.FC<props> = ({title}) => {
     return(
         <div className="form-content">
-            <Title text={title}/>
+            <Title text={title} type='medium' border={true}/>
                 <form>
                     <InputForm id="name" type="text" text='Nombre y Apellido'/>
                     <InputForm id="mail" type="mail" text='Dirección de Email'/>

@@ -28,7 +28,7 @@ return (
     <footer>
             {/* <p>&copy; {new Date().getFullYear()} Jonathan Leonel Merlino</p> */}
             <div className="div1">
-                <Title text="NUESTRAS REDES SOCIALES"/>
+                <Title text="NUESTRAS REDES SOCIALES" type='medium' border={true}/>
                 <div className="social-media">
                     <div>
                         <a href='https://www.pinterest.com/' target="_blank" rel="noopener noreferrer"><img src={pinterest}/></a>
@@ -44,7 +44,7 @@ return (
                 </div>
             </div>
             <div className='div2'>
-                <Title text="LINKS"/>
+                <Title text="LINKS" type='medium' border={true}/>
                 <div className='page-links'>
                         <ul>
                             <li>
@@ -63,10 +63,10 @@ return (
                 </div>
             </div>
             <div className='div3'>
-                <Title text="DIRECCIÓN"/>
+                <Title text="DIRECCIÓN" type='medium' border={true}/>
                 <p className='informative-text'>Av. Lorem Ipsum 4200</p>
                 <br/>
-                <Title text="TELÉFONO"/>
+                <Title text="TELÉFONO" type='medium' border={true}/>
                 <p className='informative-text'>+54 000 9999 9999</p>
             </div>
             <div className='credits'>

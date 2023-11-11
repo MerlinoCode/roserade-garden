@@ -28,7 +28,7 @@ useEffect(() => {
 
 return (
     <>
-        <Title text='Listado de Pokemons'/>
+        <Title text='Listado de Pokemons' type='medium' border={true}/>
         <div className='pokemon-grid'>
             {pokemonData.map((pokemon) => (
                 <ul className='pokemon-card' key={pokemon.id}>

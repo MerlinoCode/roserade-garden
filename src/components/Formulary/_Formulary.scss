@@ -15,7 +15,7 @@
     text-align: center;
 }
 .form-content .button-form{
-    @include font(16px, 0.5px, 400, variables.$quaternary-font, variables.$background);
+    @include font(16px, 0.5px, 400, variables.$quaternary-font, variables.$dark-background);
     background-color: variables.$accent;
     border-radius: 10px;
     padding: 0.5rem 3rem;

@@ -39,8 +39,6 @@ body::before {
     grid-template-rows: 0.5fr 1fr;
     padding: 1rem 5rem;
 }
-.information h1{
-    @include font(64px, 4.8px, 400, variables.$primary-font, variables.$text);
-    margin:0;
+.information .title{
     grid-area: 1 / 1 / 2 / 4;
 }

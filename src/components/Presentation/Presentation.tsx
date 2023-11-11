@@ -1,5 +1,6 @@
 import React from "react";
 import './_Presentation.scss'
+import Title from "../Title/Title";
 
 interface props{
     title: string;
@@ -12,7 +13,7 @@ const Presentation : React.FC<props> = ({title, desc}) => {
         <div className="presentation">
             <div className="presentation-content">
                 <div className="rectangle">
-                    <h1>{title}</h1>
+                    <Title text={title} type='large' border={false}/>
                     <h3>{desc}</h3>
                 </div>
                 <div className="roserade-image">

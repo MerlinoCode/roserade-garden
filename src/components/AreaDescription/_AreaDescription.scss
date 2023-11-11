@@ -11,8 +11,6 @@
     padding: 0 1rem;
 }
 .area-title{ 
-    @include font(26px, 2px, 600, variables.$primary-font, variables.$text);
-    border-bottom: 1px solid variables.$accent;
     grid-area: 1 / 1 / 2 / 4;
     margin: 1rem auto;
     text-align: center;

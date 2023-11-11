@@ -1,14 +1,28 @@
 @use '../../assets/styles/variables';
 @import '../../assets/styles/mixins';
 
+.border{
+    border-bottom: 3px ridge variables.$accent;
+}
 .title{
     display: flex;
     justify-content: center;
 }
 
 .title p{
-    @include font(24px, 1.2px, 400, variables.$primary-font, variables.$text);
-    border-bottom: 3px ridge variables.$accent;
+    margin: 1rem 1rem 2rem 1rem;
     padding-bottom: 0.2rem;
     width: fit-content;
+}
+.medium{
+    @include font(24px, 1.2px, 400, variables.$primary-font, variables.$text);
+}
+.medium-2{
+    @include font(26px, 2px, 600, variables.$primary-font, variables.$text)
+}
+.large{
+    @include font(44px, 2.05px, 400, variables.$primary-font, variables.$text);
+}
+.xLarge{
+    @include font(64px, 4.8px, 400, variables.$primary-font, variables.$text);
 }

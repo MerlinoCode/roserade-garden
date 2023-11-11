@@ -4,6 +4,7 @@ import InformationCard from "../../components/InformationCard/InformationCard";
 import FeatureCallout from "../../components/FeatureCallout/FeatureCallout";
 import Presentation from "../../components/Presentation/Presentation";
 import Formulary from "../../components/Formulary/Formulary";
+import Title from "../../components/Title/Title";
 
 const Home : React.FC<{}> = () => {
     
@@ -11,7 +12,7 @@ const Home : React.FC<{}> = () => {
         <div className="home">
             <Presentation title="El Jardín de Roserade" desc="Ven a visitiar el primer y único atractivo turístico Hecho por fans y para fans de pokemon!"/>
             <div className="information">
-                <h1>Bienvenido!</h1>
+                <Title text='Bienvenido!' type='large' border={true}/>
                 <InformationCard logo="airport" desc="Ven a un mundo de maravillas naturales y serenidad en el Jardín de Roserade, un renombrado atractivo turístico que cautiva los corazones de millones de personas."/>
                 <InformationCard logo="landscape" desc="Situado en el corazón de la capital de Salta, este impresionante santuario promete un viaje sensorial a través de paisajes meticulosamente cuidados y un oasis de flora de todo el mundo."/>
                 <InformationCard 
