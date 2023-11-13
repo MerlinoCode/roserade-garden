@@ -48,33 +48,35 @@ header .navbar .nav-elements ul a{
     header .navbar .nav-elements ul{ gap: 1rem;}
 }
 @media (max-width: 600px) {
+    header{
+        border: none;
+        background: none;
+    }
     .menu-icon {
         display: block;
         cursor: pointer;
         margin: auto;
     }
-    .nav-elements {
-        position: absolute;
-        right: 0;
-        top: 5.5rem;
-        background-color: variables.$background;
-        width: 0px;
-        height: calc(100vh - 60px);
-        transition: all 0.3s ease-in;
-        overflow: hidden;
-    }
-    
-    .nav-elements.active {
-        width: 100%;
-        z-index: 2;
-    }
-    .nav-elements ul a { font-size: 20px; }
     .nav-elements ul {
         display: flex;
         flex-direction: column;
         padding: 0;
     }
-    
+    .nav-elements {
+        position: absolute;
+        right: -8rem;
+        top: 8rem;
+        background-color: variables.$background;
+        height: calc(100vh - 60px);
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+    }
+    .nav-elements.active {
+        right: 0;
+        width: 100vw;
+        z-index: 2;
+    }
+    .nav-elements ul a { font-size: 20px; }
     .nav-elements ul li {
         margin-right: unset;
         margin-top: 3rem;
