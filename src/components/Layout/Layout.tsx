@@ -1,7 +1,8 @@
 // Layout.tsx
 import { ReactNode } from 'react';
 import Footer from './Footer';
-import Header from './Header';
+import Navbar from '../Navbar/Navbar';
+import './Layout.scss'
 
 type LayoutProps = {
     children: ReactNode;
@@ -10,7 +11,7 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
     return (
     <section id="layout">
-        <Header />
+        <Navbar />
             <main className="main-content">{children}</main>
         <Footer />
     </section>
