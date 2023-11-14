@@ -2,23 +2,28 @@
 @import '../../assets/styles/mixins';
 
 .active-link{
-    color: variables.$text!important;
     border-bottom: 2px solid variables.$text;
+    color: variables.$text!important;
 }
 header {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
     border: 2px solid variables.$accent;
     background: rgba(29, 29, 29, 0.42);
     backdrop-filter: blur(5.5px);
+    display: flex;
     grid-area: header;
+    padding: 1rem;
+}
+header .navbar { 
+    align-items: center;
+    display: flex;
+    flex: auto;
+    justify-content: center;
 }
 header .navbar .nav-elements ul{
     display: flex;
+    gap: 3rem;
     justify-content: space-between;
     list-style-type: none;
-    gap: 3rem;
 }
 header .navbar .nav-elements ul a:hover { 
     color: variables.$text; 
@@ -29,33 +34,52 @@ header .navbar .nav-elements ul a{
     text-decoration: none;
 }
 .menu-icon { display: none; }
+.main-logo{
+
+}
 .nav-elements ul li{
     margin-right: 2rem;
 }
 .nav-elements ul li a{
-    transition: all 0.2s ease-in-out;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 @media (max-width: 1080px){
     header .navbar .nav-elements ul a{
         @include font(18px, 1.05px, 400, variables.$primary-font, variables.$secondary);
     }
+    .nav-elements ul li{
+        margin-right: 2rem;
+    }
+    header .navbar .nav-elements ul{
+        gap: 1.7rem;
+        padding: 0;
+    }
+}
+@media (max-width: 900px){
+    .nav-elements ul li{
+        margin-right: 0rem;
+    }
 }
 @media (max-width: 768px){
     header .navbar .nav-elements ul a{
-        @include font(14px, 1.05px, 400, variables.$primary-font, variables.$secondary);
+        @include font(12px, 1px, 400, variables.$primary-font, variables.$secondary);
     }
-    header .navbar .nav-elements ul{ gap: 1rem;}
+    header .navbar .nav-elements ul{ gap: 1.3rem;}
 }
 @media (max-width: 600px) {
     header{
         border: none;
         background: none;
+        justify-content: right;
+    }
+    header .navbar{
+        justify-content: right;
     }
     .menu-icon {
-        display: block;
         cursor: pointer;
-        margin: auto;
+        display: flex;
+        justify-self: end;
     }
     .nav-elements ul {
         display: flex;
@@ -64,11 +88,11 @@ header .navbar .nav-elements ul a{
     }
     .nav-elements {
         position: absolute;
-        right: -8rem;
+        right: -10rem;
         top: 8rem;
         background-color: variables.$background;
         height: calc(100vh - 60px);
-        transition: all 0.3s ease-in;
+        transition: all 0.4s ease-in;
         overflow: hidden;
     }
     .nav-elements.active {
@@ -76,7 +100,9 @@ header .navbar .nav-elements ul a{
         width: 100vw;
         z-index: 2;
     }
-    .nav-elements ul a { font-size: 20px; }
+    header .navbar .nav-elements ul a{
+        @include font(26px, 3px, 500, variables.$primary-font, variables.$secondary);
+    }
     .nav-elements ul li {
         margin-right: unset;
         margin-top: 3rem;

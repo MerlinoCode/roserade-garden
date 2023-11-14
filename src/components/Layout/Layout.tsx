@@ -12,8 +12,8 @@ const Layout = ({ children }: LayoutProps) => {
     return (
     <section id="layout">
         <Navbar />
-            <main className="main-content">{children}</main>
-        <Footer />
+            {/* <main className="main-content">{children}</main>
+        <Footer /> */}
     </section>
     );
 };
